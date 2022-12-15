@@ -42,20 +42,15 @@ struct TipView: View {
     var body: some View {
         
         ZStack {
-            
             NavigationStack {
-                
                 Form {
-                    
                     Section {
-                        
                         TextField("", text: $amound)
                         
                     } header: {
                         Text("Enter you're sum")
                             .offset(x: 10)
                     }
-                    
                     Section {
                         
                         Picker("", selection: $numberOfPeople) {
@@ -69,7 +64,6 @@ struct TipView: View {
                         Text("Enter the number of people")
                             .offset(x: 10)
                     }
-                    
                     Section {
                         
                         Picker("", selection: $percentageTip) {
@@ -83,7 +77,6 @@ struct TipView: View {
                         Text("Enter the percentage")
                             .offset(x: 10)
                     }
-                    
                     Section {
                         
                         Text("\(fullSum, specifier: "%.0f") $")
@@ -95,7 +88,6 @@ struct TipView: View {
                     }
                     
                     GetCatPicture(percentage: $percentageTip)
-                    
                 }
                 
                 Button {
@@ -115,8 +107,6 @@ struct TipView: View {
         }
     }
 }
-
-
 
 struct Main_Previews: PreviewProvider {
     static var previews: some View {

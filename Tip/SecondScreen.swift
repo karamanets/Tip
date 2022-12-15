@@ -14,8 +14,6 @@ struct SecondView: View {
     @State private var rotation = 0.0
     @State private var scale = 0.3
     
-    
-    
     var body: some View {
         
         ZStack (alignment: .topLeading) {
