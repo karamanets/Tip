@@ -5,15 +5,8 @@
 //  Created by Alex Karamanets on 08.12.2022.
 //
 
-/*
- Tasks:
- 
- 1 Dark mode adapt
- 2 Picture shadow
- 3 Logotype
- 4 Second screen gratitude
- 5 Second Screen some phrases
- */
+
+// add class for percentage
 
 import SwiftUI
 
@@ -21,7 +14,7 @@ struct TipView: View {
     
     @State private var amound         = ""
     @State private var numberOfPeople = 2
-    @State private var percentageTip  = 0
+    @State         var percentageTip  = 0
     @State private var sumTip         = ""
     @State private var secondScreen   = false
     
@@ -38,7 +31,6 @@ struct TipView: View {
         
         return endSum
     }
-    
     var body: some View {
         
         ZStack {
@@ -46,17 +38,14 @@ struct TipView: View {
                 Form {
                     Section {
                         TextField("", text: $amound)
-                        
                     } header: {
                         Text("Enter you're sum")
                             .offset(x: 10)
                     }
                     Section {
-                        
                         Picker("", selection: $numberOfPeople) {
                             
                             ForEach(2 ..< 100, id: \.self) { item in
-                                
                                 Text("\(item) People")
                             }
                         }
@@ -65,11 +54,9 @@ struct TipView: View {
                             .offset(x: 10)
                     }
                     Section {
-                        
                         Picker("", selection: $percentageTip) {
                             
                             ForEach(data, id: \.self) { item in
-                                
                                 Text("\(item)")
                             }
                         } .pickerStyle(.segmented)
@@ -78,7 +65,6 @@ struct TipView: View {
                             .offset(x: 10)
                     }
                     Section {
-                        
                         Text("\(fullSum, specifier: "%.0f") $")
                         
                     } header: {
@@ -86,28 +72,24 @@ struct TipView: View {
                             .padding()
                             .offset(x: 66)
                     }
-                    
                     GetCatPicture(percentage: $percentageTip)
+                        .shadow(color: Color("color1"), radius: 5,x: 2,y: 2)
                 }
-                
                 Button {
                     self.secondScreen = true
                 } label: {
                     ButtonModifier()
                 }
-                
                 .sheet(isPresented: $secondScreen) {
                     SecondView()
                 }
-                
             }
             .navigationTitle("Count you're bill")
             .navigationBarTitleDisplayMode(.inline)
-            
         }
     }
 }
-
+//                        📌
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
         TipView()
