@@ -13,19 +13,26 @@ struct SecondScreenAnimationView: View {
     @Binding var scale   : Double
     
     var body: some View {
+        
         ZStack  {
-            
-            Text("Thank you for your care")
+            Text("""
+                 Thank you for
+                 your care
+                 
+                 Gratitude is a sure
+                 way to bring more
+                 into your life.
+                 """)
                 .foregroundColor(Color.black)
-                .font(.system(size: 26) .italic() .monospaced())
+                .font(.custom("abosanova", size: 22))
                 .padding()
                 .shadow(color: .purple, radius: 4, x: 3, y: 3)
                 .overlay(RoundedRectangle(cornerRadius: 30)
-                    .foregroundColor(Color.pink.opacity(0.5))
+                    .foregroundColor(Color.pink.opacity(0.2))
                     .shadow(color: .purple, radius: 5, x: 5, y: 5)
                     .blur(radius: 60) )
-                .offset(x:35, y: -260)
-                .opacity(0.8)
+                .offset(x: 55, y: -230)
+                .opacity(0.9)
 
             Image("lamp")
                 .resizable()
@@ -94,7 +101,7 @@ struct SecondScreenAnimationView: View {
         }
     }
 }
-//                        📌
+//                                       🔱
 struct SecondScreenAnimationView_Previews: PreviewProvider {
     static var previews: some View {
         SecondView(percentage: .constant(0))

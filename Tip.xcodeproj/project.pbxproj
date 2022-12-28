@@ -7,23 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C370336295B31F000D78BDA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C370335295B31F000D78BDA /* Data.swift */; };
 		2C841E09294196ED0049FCB8 /* TipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C841E08294196ED0049FCB8 /* TipApp.swift */; };
 		2C841E0B294196ED0049FCB8 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C841E0A294196ED0049FCB8 /* Main.swift */; };
 		2C841E0D294196EF0049FCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C841E0C294196EF0049FCB8 /* Assets.xcassets */; };
 		2C841E10294196EF0049FCB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C841E0F294196EF0049FCB8 /* Preview Assets.xcassets */; };
 		2CB414102959E472009B0D13 /* SecondScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4140F2959E472009B0D13 /* SecondScreenAnimation.swift */; };
+		2CE07E78295CA7CB0023F80C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE07E77295CA7CB0023F80C /* Data.swift */; };
+		2CE07E7B295CA9790023F80C /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE07E7A295CA9790023F80C /* Modifier.swift */; };
+		2CE07E83295CAF490023F80C /* abosanova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE07E81295CAF490023F80C /* abosanova.ttf */; };
 		2CFEF5442942402300081A3E /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEF5432942402300081A3E /* SecondScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C370335295B31F000D78BDA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		2C841E05294196ED0049FCB8 /* Tip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C841E08294196ED0049FCB8 /* TipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipApp.swift; sourceTree = "<group>"; };
 		2C841E0A294196ED0049FCB8 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		2C841E0C294196EF0049FCB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C841E0F294196EF0049FCB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CB4140F2959E472009B0D13 /* SecondScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenAnimation.swift; sourceTree = "<group>"; };
+		2CE07E77295CA7CB0023F80C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		2CE07E7A295CA9790023F80C /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		2CE07E81295CAF490023F80C /* abosanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = abosanova.ttf; sourceTree = "<group>"; };
+		2CE07E84295CAFB10023F80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2CFEF5432942402300081A3E /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,13 +62,15 @@
 		2C841E07294196ED0049FCB8 /* Tip */ = {
 			isa = PBXGroup;
 			children = (
+				2CE07E84295CAFB10023F80C /* Info.plist */,
 				2C841E08294196ED0049FCB8 /* TipApp.swift */,
 				2C841E0A294196ED0049FCB8 /* Main.swift */,
 				2CFEF5432942402300081A3E /* SecondScreen.swift */,
 				2CB4140F2959E472009B0D13 /* SecondScreenAnimation.swift */,
-				2C370335295B31F000D78BDA /* Data.swift */,
-				2CE07E74295C9DB90023F80C /* Font */,
+				2CE07E77295CA7CB0023F80C /* Data.swift */,
+				2CE07E7A295CA9790023F80C /* Modifier.swift */,
 				2C841E0C294196EF0049FCB8 /* Assets.xcassets */,
+				2CE07E74295C9DB90023F80C /* Font */,
 				2C841E0E294196EF0049FCB8 /* Preview Content */,
 			);
 			path = Tip;
@@ -80,6 +87,7 @@
 		2CE07E74295C9DB90023F80C /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				2CE07E81295CAF490023F80C /* abosanova.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 			files = (
 				2C841E10294196EF0049FCB8 /* Preview Assets.xcassets in Resources */,
 				2C841E0D294196EF0049FCB8 /* Assets.xcassets in Resources */,
+				2CE07E83295CAF490023F80C /* abosanova.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,10 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C841E0B294196ED0049FCB8 /* Main.swift in Sources */,
+				2CE07E78295CA7CB0023F80C /* Data.swift in Sources */,
+				2CE07E7B295CA9790023F80C /* Modifier.swift in Sources */,
 				2CFEF5442942402300081A3E /* SecondScreen.swift in Sources */,
 				2C841E09294196ED0049FCB8 /* TipApp.swift in Sources */,
 				2CB414102959E472009B0D13 /* SecondScreenAnimation.swift in Sources */,
-				2C370336295B31F000D78BDA /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +299,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Tip/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,11 +327,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Tip/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

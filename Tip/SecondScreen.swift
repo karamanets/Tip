@@ -12,7 +12,7 @@ struct SecondView: View {
     @Environment(\.dismiss) var back
     
     @State private var rotation = 0.0
-    @State private var scale = 0.3
+    @State private var scale    = 0.3
     
     @Binding var percentage: Int
     
@@ -44,7 +44,7 @@ struct SecondView: View {
         }
     }
 }
-//                        📌
+//                        🔱
 struct SecondView_Previews: PreviewProvider {
     static var previews: some View {
         SecondView(percentage: .constant(0))
