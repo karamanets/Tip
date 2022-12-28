@@ -21,7 +21,7 @@ struct SecondScreenAnimationView: View {
                 .padding()
                 .shadow(color: .purple, radius: 4, x: 3, y: 3)
                 .overlay(RoundedRectangle(cornerRadius: 30)
-                    .foregroundColor(Color.yellow.opacity(0.5))
+                    .foregroundColor(Color.pink.opacity(0.5))
                     .shadow(color: .purple, radius: 5, x: 5, y: 5)
                     .blur(radius: 60) )
                 .offset(x:35, y: -260)
@@ -32,7 +32,6 @@ struct SecondScreenAnimationView: View {
                 .scaledToFit()
                 .frame(width: 300, height: 200)
                 .offset(x: 170, y: -45)
-            
                 .rotation3DEffect(.degrees(rotation), axis: (  x:0, y: 0, z:1 ), anchor: .topLeading)
                 .onAppear {
                     let buseAnimation = Animation.easeIn(duration: 3)
@@ -98,7 +97,7 @@ struct SecondScreenAnimationView: View {
 //                        📌
 struct SecondScreenAnimationView_Previews: PreviewProvider {
     static var previews: some View {
-        SecondView()
+        SecondView(percentage: .constant(0))
     }
 }
 

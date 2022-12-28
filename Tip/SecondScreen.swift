@@ -14,6 +14,8 @@ struct SecondView: View {
     @State private var rotation = 0.0
     @State private var scale = 0.3
     
+    @Binding var percentage: Int
+    
     var body: some View {
         
         GeometryReader { _ in
@@ -37,7 +39,7 @@ struct SecondView: View {
                 }
                 SecondScreenAnimationView(rotation: $rotation, scale: $scale)
                 
-                CatPhrases(percentage: TipView())
+                CatPhrases(percentage: $percentage)
             }
         }
     }
@@ -45,7 +47,7 @@ struct SecondView: View {
 //                        📌
 struct SecondView_Previews: PreviewProvider {
     static var previews: some View {
-        SecondView()
+        SecondView(percentage: .constant(0))
     }
 }
 

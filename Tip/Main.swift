@@ -5,27 +5,23 @@
 //  Created by Alex Karamanets on 08.12.2022.
 //
 
-
-// add class for percentage
-
 import SwiftUI
 
 struct TipView: View {
     
+    @State private var percentage     = 0
     @State private var amound         = ""
     @State private var numberOfPeople = 2
-    @State         var percentageTip  = 0
     @State private var sumTip         = ""
     @State private var secondScreen   = false
-    
-    
+
     let data = [5, 10, 15, 20, 25]
     
     var fullSum: Double {
         
         let sum          = Double(amound) ?? 0
         let sumOnePerson = sum / Double(numberOfPeople)
-        let tip          = Double(percentageTip) / 100
+        let tip          = Double(percentage) / 100
         let tipOnePerson = sumOnePerson * tip
         let endSum       = tipOnePerson + sumOnePerson
         
@@ -54,7 +50,7 @@ struct TipView: View {
                             .offset(x: 10)
                     }
                     Section {
-                        Picker("", selection: $percentageTip) {
+                        Picker("", selection: $percentage) {
                             
                             ForEach(data, id: \.self) { item in
                                 Text("\(item)")
@@ -72,7 +68,7 @@ struct TipView: View {
                             .padding()
                             .offset(x: 66)
                     }
-                    GetCatPicture(percentage: $percentageTip)
+                    GetCatPicture(percentage: $percentage)
                         .shadow(color: Color("color1"), radius: 5,x: 2,y: 2)
                 }
                 Button {
@@ -81,7 +77,7 @@ struct TipView: View {
                     ButtonModifier()
                 }
                 .sheet(isPresented: $secondScreen) {
-                    SecondView()
+                    SecondView(percentage: $percentage)
                 }
             }
             .navigationTitle("Count you're bill")
@@ -95,5 +91,3 @@ struct Main_Previews: PreviewProvider {
         TipView()
     }
 }
-
-
