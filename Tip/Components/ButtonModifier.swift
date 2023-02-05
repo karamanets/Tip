@@ -20,7 +20,7 @@ struct ButtonModifier: View {
                     .shadow(color: .black, radius: 2, x: -1, y: -1)
                 )
                 .overlay(RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color.purple, lineWidth: 1)
+                    .stroke(Color("color1"), lineWidth: 1)
                     .frame(width: 68, height: 28)
                 )
                 .overlay(Text ("About")
@@ -29,10 +29,8 @@ struct ButtonModifier: View {
         }
     }
 }
-
-
 //                      🔱
-struct Modifier_Previews: PreviewProvider {
+struct ButtonModifier_Previews: PreviewProvider {
     static var previews: some View {
         SecondView(percentage: .constant(0))
     }

@@ -22,7 +22,7 @@ struct SecondView: View {
 
             ZStack (alignment: .topLeading) {
 
-                LinearGradient(colors: [.white, Color("color1")],
+                LinearGradient(colors: [Color("color2"), Color("color1")],
                                startPoint: .topLeading,
                                endPoint  : .bottomTrailing)
                 .ignoresSafeArea()
@@ -36,6 +36,7 @@ struct SecondView: View {
                         .padding()
                         .offset(x: 10, y: 30)
                         .opacity(0.6)
+                        .shadow(color: .purple, radius: 5, x: 2, y: 2)
                 }
                 SecondScreenAnimationView(rotation: $rotation, scale: $scale)
                 

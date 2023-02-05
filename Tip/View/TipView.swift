@@ -10,21 +10,19 @@ import SwiftUI
 struct TipView: View {
     
     @State private var percentage     = 0
-    @State private var amound         = ""
     @State private var numberOfPeople = 2
+    @State private var amount         = ""
     @State private var sumTip         = ""
     @State private var secondScreen   = false
 
     let data = [5, 10, 15, 20, 25]
     
     var fullSum: Double {
-        
-        let sum          = Double(amound) ?? 0
+        let sum          = Double(amount) ?? 0
         let sumOnePerson = sum / Double(numberOfPeople)
         let tip          = Double(percentage) / 100
         let tipOnePerson = sumOnePerson * tip
         let endSum       = tipOnePerson + sumOnePerson
-        
         return endSum
     }
     var body: some View {
@@ -33,7 +31,7 @@ struct TipView: View {
             NavigationStack {
                 Form {
                     Section {
-                        TextField("", text: $amound)
+                        TextField("", text: $amount)
                     } header: {
                         Text("Enter you're sum")
                             .offset(x: 10)
@@ -64,7 +62,7 @@ struct TipView: View {
                         Text("\(fullSum, specifier: "%.0f") $")
                         
                     } header: {
-                        Text("amound per person")
+                        Text("amount per person")
                             .padding()
                             .offset(x: 66)
                     }

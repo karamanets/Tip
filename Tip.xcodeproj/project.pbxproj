@@ -7,29 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C663D57298EB336001DFDC8 /* CatPictureModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C663D56298EB336001DFDC8 /* CatPictureModifier.swift */; };
+		2C663D59298EB452001DFDC8 /* CatPhrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C663D58298EB452001DFDC8 /* CatPhrases.swift */; };
+		2C663D5B298EB4E2001DFDC8 /* GetCatPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C663D5A298EB4E2001DFDC8 /* GetCatPicture.swift */; };
 		2C841E09294196ED0049FCB8 /* TipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C841E08294196ED0049FCB8 /* TipApp.swift */; };
-		2C841E0B294196ED0049FCB8 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C841E0A294196ED0049FCB8 /* Main.swift */; };
+		2C841E0B294196ED0049FCB8 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C841E0A294196ED0049FCB8 /* TipView.swift */; };
 		2C841E0D294196EF0049FCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C841E0C294196EF0049FCB8 /* Assets.xcassets */; };
 		2C841E10294196EF0049FCB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C841E0F294196EF0049FCB8 /* Preview Assets.xcassets */; };
 		2CB414102959E472009B0D13 /* SecondScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4140F2959E472009B0D13 /* SecondScreenAnimation.swift */; };
-		2CE07E78295CA7CB0023F80C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE07E77295CA7CB0023F80C /* Data.swift */; };
-		2CE07E7B295CA9790023F80C /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE07E7A295CA9790023F80C /* Modifier.swift */; };
+		2CE07E7B295CA9790023F80C /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE07E7A295CA9790023F80C /* ButtonModifier.swift */; };
 		2CE07E83295CAF490023F80C /* abosanova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE07E81295CAF490023F80C /* abosanova.ttf */; };
-		2CFEF5442942402300081A3E /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEF5432942402300081A3E /* SecondScreen.swift */; };
+		2CFEF5442942402300081A3E /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEF5432942402300081A3E /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C663D56298EB336001DFDC8 /* CatPictureModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPictureModifier.swift; sourceTree = "<group>"; };
+		2C663D58298EB452001DFDC8 /* CatPhrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPhrases.swift; sourceTree = "<group>"; };
+		2C663D5A298EB4E2001DFDC8 /* GetCatPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatPicture.swift; sourceTree = "<group>"; };
 		2C841E05294196ED0049FCB8 /* Tip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C841E08294196ED0049FCB8 /* TipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipApp.swift; sourceTree = "<group>"; };
-		2C841E0A294196ED0049FCB8 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		2C841E0A294196ED0049FCB8 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		2C841E0C294196EF0049FCB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C841E0F294196EF0049FCB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CB4140F2959E472009B0D13 /* SecondScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenAnimation.swift; sourceTree = "<group>"; };
-		2CE07E77295CA7CB0023F80C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		2CE07E7A295CA9790023F80C /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		2CE07E7A295CA9790023F80C /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		2CE07E81295CAF490023F80C /* abosanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = abosanova.ttf; sourceTree = "<group>"; };
-		2CE07E84295CAFB10023F80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		2CFEF5432942402300081A3E /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		2CE07E84295CAFB10023F80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFEF5432942402300081A3E /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C663D54298EB158001DFDC8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2CB4140F2959E472009B0D13 /* SecondScreenAnimation.swift */,
+				2CE07E7A295CA9790023F80C /* ButtonModifier.swift */,
+				2C663D56298EB336001DFDC8 /* CatPictureModifier.swift */,
+				2C663D58298EB452001DFDC8 /* CatPhrases.swift */,
+				2C663D5A298EB4E2001DFDC8 /* GetCatPicture.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2C663D55298EB236001DFDC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C841E0A294196ED0049FCB8 /* TipView.swift */,
+				2CFEF5432942402300081A3E /* SecondView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2C841DFC294196ED0049FCB8 = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +89,8 @@
 			children = (
 				2CE07E84295CAFB10023F80C /* Info.plist */,
 				2C841E08294196ED0049FCB8 /* TipApp.swift */,
-				2C841E0A294196ED0049FCB8 /* Main.swift */,
-				2CFEF5432942402300081A3E /* SecondScreen.swift */,
-				2CB4140F2959E472009B0D13 /* SecondScreenAnimation.swift */,
-				2CE07E77295CA7CB0023F80C /* Data.swift */,
-				2CE07E7A295CA9790023F80C /* Modifier.swift */,
+				2C663D55298EB236001DFDC8 /* View */,
+				2C663D54298EB158001DFDC8 /* Components */,
 				2C841E0C294196EF0049FCB8 /* Assets.xcassets */,
 				2CE07E74295C9DB90023F80C /* Font */,
 				2C841E0E294196EF0049FCB8 /* Preview Content */,
@@ -163,10 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C841E0B294196ED0049FCB8 /* Main.swift in Sources */,
-				2CE07E78295CA7CB0023F80C /* Data.swift in Sources */,
-				2CE07E7B295CA9790023F80C /* Modifier.swift in Sources */,
-				2CFEF5442942402300081A3E /* SecondScreen.swift in Sources */,
+				2C841E0B294196ED0049FCB8 /* TipView.swift in Sources */,
+				2C663D59298EB452001DFDC8 /* CatPhrases.swift in Sources */,
+				2C663D5B298EB4E2001DFDC8 /* GetCatPicture.swift in Sources */,
+				2CE07E7B295CA9790023F80C /* ButtonModifier.swift in Sources */,
+				2C663D57298EB336001DFDC8 /* CatPictureModifier.swift in Sources */,
+				2CFEF5442942402300081A3E /* SecondView.swift in Sources */,
 				2C841E09294196ED0049FCB8 /* TipApp.swift in Sources */,
 				2CB414102959E472009B0D13 /* SecondScreenAnimation.swift in Sources */,
 			);
@@ -300,7 +324,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tip/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -328,7 +351,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tip/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

@@ -41,10 +41,10 @@ struct SecondScreenAnimationView: View {
                 .offset(x: 170, y: -45)
                 .rotation3DEffect(.degrees(rotation), axis: (  x:0, y: 0, z:1 ), anchor: .topLeading)
                 .onAppear {
-                    let buseAnimation = Animation.easeIn(duration: 3)
-                    let repited = buseAnimation
+                    let baseAnimation = Animation.easeIn(duration: 3)
+                    let repeating = baseAnimation
                         .repeatForever(autoreverses: true)
-                    return withAnimation(repited) { self.rotation = 3 }
+                    return withAnimation(repeating) { self.rotation = 3 }
                 }
             
             Circle()
@@ -54,10 +54,10 @@ struct SecondScreenAnimationView: View {
                 .offset(x: 105, y: -93)
                 .opacity(scale)
                 .onAppear {
-                    let buseAnimation = Animation.easeIn(duration: 3)
-                    let repited = buseAnimation
+                    let baseAnimation = Animation.easeIn(duration: 3)
+                    let repeating = baseAnimation
                         .repeatForever(autoreverses: true)
-                    return withAnimation(repited) { self.scale = 0.7 }
+                    return withAnimation(repeating) { self.scale = 0.7 }
                 }
             
             Image("think")
