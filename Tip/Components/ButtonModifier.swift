@@ -30,22 +30,7 @@ struct ButtonModifier: View {
     }
 }
 
-struct CatPictureModifire: View {
-    
-    var name: String
 
-    var body: some View {
-        
-        ZStack {
-            
-            Image("\(name)")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
-                .padding(.leading, 50)
-        }
-    }
-}
 //                      🔱
 struct Modifier_Previews: PreviewProvider {
     static var previews: some View {
