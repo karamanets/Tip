@@ -25,6 +25,9 @@ struct TipView: View {
         let endSum       = tipOnePerson + sumOnePerson
         return endSum
     }
+    
+    @State private var isAnimated = false
+    
     var body: some View {
         
         ZStack {
@@ -66,8 +69,10 @@ struct TipView: View {
                             .padding()
                             .offset(x: 66)
                     }
+                    
                     GetCatPicture(percentage: $percentage)
                         .shadow(color: Color("color1"), radius: 5,x: 2,y: 2)
+                        
                 }
                 Button {
                     self.secondScreen = true
@@ -80,6 +85,10 @@ struct TipView: View {
             }
             .navigationTitle("Count you're bill")
             .navigationBarTitleDisplayMode(.inline)
+            .overlay { LottieView(animation: $isAnimated) }
+        }
+        .onSubmit {
+            self.isAnimated.toggle()
         }
     }
 }

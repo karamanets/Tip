@@ -17,7 +17,7 @@ struct ButtonModifier: View {
                 .foregroundColor(Color("color1"))
                 .shadow(color: .black, radius: 4, x: 2, y: 3)
                 .overlay(RoundedRectangle(cornerRadius: 20) .stroke(Color.black, lineWidth: 1)
-                    .shadow(color: .black, radius: 2, x: -1, y: -1)
+                    .shadow(color: .black.opacity(0.5), radius: 2, x: -1, y: -1)
                 )
                 .overlay(RoundedRectangle(cornerRadius: 20)
                     .stroke(Color("color1"), lineWidth: 1)
