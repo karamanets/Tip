@@ -15,7 +15,6 @@ struct LottieView: View {
     let frame: CGFloat = 630
     
     var body: some View {
-        
         ZStack {
             if animation {
                 LottieViewModel(animation: $animation)
@@ -24,6 +23,11 @@ struct LottieView: View {
         .frame(width: frame, height: frame)
     }
 }
-
+//                  🔱
+struct LottieView_Previews: PreviewProvider {
+    static var previews: some View {
+        TipView()
+    }
+}
 
 

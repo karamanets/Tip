@@ -28,3 +28,9 @@ struct CatPhrases: View {
         }
     }
 }
+//                        🔱
+struct CatPhrases_Previews: PreviewProvider {
+    static var previews: some View {
+        SecondView(percentage: .constant(0))
+    }
+}

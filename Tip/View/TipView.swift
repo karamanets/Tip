@@ -9,24 +9,7 @@ import SwiftUI
 
 struct TipView: View {
     
-    @State private var percentage     = 0
-    @State private var numberOfPeople = 2
-    @State private var amount         = ""
-    @State private var sumTip         = ""
-    @State private var secondScreen   = false
-
-    let data = [5, 10, 15, 20, 25]
-    
-    var fullSum: Double {
-        let sum          = Double(amount) ?? 0
-        let sumOnePerson = sum / Double(numberOfPeople)
-        let tip          = Double(percentage) / 100
-        let tipOnePerson = sumOnePerson * tip
-        let endSum       = tipOnePerson + sumOnePerson
-        return endSum
-    }
-    
-    @State private var isAnimated = false
+    @StateObject var vm = TipViewModel()
     
     var body: some View {
         
@@ -34,13 +17,14 @@ struct TipView: View {
             NavigationStack {
                 Form {
                     Section {
-                        TextField("", text: $amount)
+                        TextField("", text: $vm.model.amount)
+                            .keyboardType(.numbersAndPunctuation)
                     } header: {
                         Text("Enter you're sum")
                             .offset(x: 10)
                     }
                     Section {
-                        Picker("", selection: $numberOfPeople) {
+                        Picker("", selection: $vm.model.numberOfPeople) {
                             
                             ForEach(2 ..< 100, id: \.self) { item in
                                 Text("\(item) People")
@@ -51,9 +35,9 @@ struct TipView: View {
                             .offset(x: 10)
                     }
                     Section {
-                        Picker("", selection: $percentage) {
+                        Picker("", selection: $vm.model.percentage) {
                             
-                            ForEach(data, id: \.self) { item in
+                            ForEach(vm.model.data, id: \.self) { item in
                                 Text("\(item)")
                             }
                         } .pickerStyle(.segmented)
@@ -62,7 +46,7 @@ struct TipView: View {
                             .offset(x: 10)
                     }
                     Section {
-                        Text("\(fullSum, specifier: "%.0f") $")
+                        Text("\(vm.model.fullSum, specifier: "%.0f") $")
                         
                     } header: {
                         Text("amount per person")
@@ -70,25 +54,25 @@ struct TipView: View {
                             .offset(x: 66)
                     }
                     
-                    GetCatPicture(percentage: $percentage)
+                    GetCatPicture(percentage: $vm.model.percentage)
                         .shadow(color: Color("color1"), radius: 5,x: 2,y: 2)
                         
                 }
                 Button {
-                    self.secondScreen = true
+                    vm.model.secondScreen = true
                 } label: {
                     ButtonModifier()
                 }
-                .sheet(isPresented: $secondScreen) {
-                    SecondView(percentage: $percentage)
+                .sheet(isPresented: $vm.model.secondScreen) {
+                    SecondView(percentage: $vm.model.percentage)
                 }
             }
             .navigationTitle("Count you're bill")
             .navigationBarTitleDisplayMode(.inline)
-            .overlay { LottieView(animation: $isAnimated) }
+            .overlay { LottieView(animation: $vm.model.isAnimated) }
         }
         .onSubmit {
-            self.isAnimated.toggle()
+            vm.model.isAnimated.toggle()
         }
     }
 }

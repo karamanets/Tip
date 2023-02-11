@@ -13,7 +13,6 @@ struct SecondScreenAnimationView: View {
     @Binding var scale   : Double
     
     var body: some View {
-        
         ZStack  {
             Text("""
                  Thank you for
@@ -101,7 +100,7 @@ struct SecondScreenAnimationView: View {
         }
     }
 }
-//                                       🔱
+//                         🔱
 struct SecondScreenAnimationView_Previews: PreviewProvider {
     static var previews: some View {
         SecondView(percentage: .constant(0))

@@ -22,4 +22,9 @@ struct CatPictureModifier: View {
         }
     }
 }
-
+//                        🔱
+struct CatPictureModifier_Previews: PreviewProvider {
+    static var previews: some View {
+        SecondView(percentage: .constant(0))
+    }
+}

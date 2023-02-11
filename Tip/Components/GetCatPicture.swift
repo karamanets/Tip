@@ -22,3 +22,9 @@ struct GetCatPicture: View {
         }
     }
 }
+//                  🔱
+struct GetCatPicture_Previews: PreviewProvider {
+    static var previews: some View {
+        TipView()
+    }
+}

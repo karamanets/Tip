@@ -14,6 +14,8 @@
 		2C841E0B294196ED0049FCB8 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C841E0A294196ED0049FCB8 /* TipView.swift */; };
 		2C841E0D294196EF0049FCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C841E0C294196EF0049FCB8 /* Assets.xcassets */; };
 		2C841E10294196EF0049FCB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C841E0F294196EF0049FCB8 /* Preview Assets.xcassets */; };
+		2C8995F62996861A007D2A23 /* TipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8995F52996861A007D2A23 /* TipViewModel.swift */; };
+		2C8995F8299688BF007D2A23 /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8995F7299688BF007D2A23 /* TipModel.swift */; };
 		2CAB0A81298FC1CA00D4E41A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2CAB0A80298FC1CA00D4E41A /* Lottie */; };
 		2CAB0A83298FC22100D4E41A /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB0A82298FC22100D4E41A /* LottieView.swift */; };
 		2CAB0A8B298FC80C00D4E41A /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB0A8A298FC80C00D4E41A /* cat.json */; };
@@ -33,6 +35,8 @@
 		2C841E0A294196ED0049FCB8 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		2C841E0C294196EF0049FCB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C841E0F294196EF0049FCB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C8995F52996861A007D2A23 /* TipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewModel.swift; sourceTree = "<group>"; };
+		2C8995F7299688BF007D2A23 /* TipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
 		2CAB0A82298FC22100D4E41A /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		2CAB0A8A298FC80C00D4E41A /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
 		2CAB0A8E298FCCCE00D4E41A /* LottieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewModel.swift; sourceTree = "<group>"; };
@@ -96,15 +100,16 @@
 		2C841E07294196ED0049FCB8 /* Tip */ = {
 			isa = PBXGroup;
 			children = (
-				2CE07E84295CAFB10023F80C /* Info.plist */,
 				2C841E08294196ED0049FCB8 /* TipApp.swift */,
 				2C663D55298EB236001DFDC8 /* View */,
 				2CAB0A90298FCCFE00D4E41A /* ViewModel */,
+				2C8995F9299688D3007D2A23 /* Model */,
 				2C663D54298EB158001DFDC8 /* Components */,
 				2CAB0A7E298FC16400D4E41A /* Jsone */,
 				2CE07E74295C9DB90023F80C /* Font */,
+				2C8995F229968551007D2A23 /* Assets */,
 				2C841E0E294196EF0049FCB8 /* Preview Content */,
-				2C841E0C294196EF0049FCB8 /* Assets.xcassets */,
+				2CE07E84295CAFB10023F80C /* Info.plist */,
 			);
 			path = Tip;
 			sourceTree = "<group>";
@@ -115,6 +120,22 @@
 				2C841E0F294196EF0049FCB8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C8995F229968551007D2A23 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2C841E0C294196EF0049FCB8 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2C8995F9299688D3007D2A23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C8995F7299688BF007D2A23 /* TipModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2CAB0A7E298FC16400D4E41A /* Jsone */ = {
@@ -128,6 +149,7 @@
 		2CAB0A90298FCCFE00D4E41A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2C8995F52996861A007D2A23 /* TipViewModel.swift */,
 				2CAB0A8E298FCCCE00D4E41A /* LottieViewModel.swift */,
 			);
 			path = ViewModel;
@@ -219,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8995F62996861A007D2A23 /* TipViewModel.swift in Sources */,
 				2C841E0B294196ED0049FCB8 /* TipView.swift in Sources */,
 				2C663D59298EB452001DFDC8 /* CatPhrases.swift in Sources */,
+				2C8995F8299688BF007D2A23 /* TipModel.swift in Sources */,
 				2CAB0A83298FC22100D4E41A /* LottieView.swift in Sources */,
 				2C663D5B298EB4E2001DFDC8 /* GetCatPicture.swift in Sources */,
 				2CE07E7B295CA9790023F80C /* ButtonModifier.swift in Sources */,

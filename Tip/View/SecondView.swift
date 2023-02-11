@@ -10,10 +10,8 @@ import SwiftUI
 struct SecondView: View {
     
     @Environment(\.dismiss) var back
-    
     @State private var rotation = 0.0
     @State private var scale    = 0.3
-    
     @Binding var percentage: Int
     
     var body: some View {
