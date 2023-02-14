@@ -29,13 +29,16 @@ ____
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=23&pause=1000&color=9356A0&width=435&lines=About+the+project" alt="Typing SVG" /></a>  
   
 
-  
+ 
 <!--- about text --->  
   
 >### Sometimes you are sitting in a restaurant with a large group and want to leave a tip.  
 >### The Tip app will help you and do all the work for you! 
 >### Just add the amount and number of people, and the percentage you want to leave the waiter. 
   
+
+<!--- Gamepad ---> 
+![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Gamepad.png) 
 
   
 ![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Lightning1.png)  Completely in SwiftUI
@@ -49,7 +52,8 @@ ____
 ![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Lightning1.png)  Adapt to the dark and light mode
   
 
-  
+<!--- Gamepad ---> 
+![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Gamepad.png) 
   
 <!--- typing ---> 
  
