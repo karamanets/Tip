@@ -52,15 +52,15 @@ ____
   
   
 <!--- typing ---> 
-<h4 align="center">  
+ 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=200&size=40&pause=1000&color=9356A0&width=435&lines=Screens" alt="Typing SVG" /></a>
   
 ____
   
-  
+ <h4 align="center">  
   
   <!--- Screens --->
-  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen1.png" width="150" height="300">   <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen2.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen3.png" width="150" height="300">   <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen4.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen5.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen6.png" width="150" height="300">
+<img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen2.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen3.png" width="150" height="300">   <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen4.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen5.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen6.png" width="150" height="300">
   
   
   
