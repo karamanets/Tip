@@ -38,7 +38,7 @@ ____
   
 
 <!--- Gamepad ---> 
-![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Gamepad.png) 
+<img src="https://github.com/karamanets/karamanets/blob/main/logo3.png" width="106" height="24"> 
 
   
 ![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Lightning1.png)  Completely in SwiftUI
@@ -53,7 +53,7 @@ ____
   
 
 <!--- Gamepad ---> 
-![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Gamepad.png) 
+<img src="https://github.com/karamanets/karamanets/blob/main/logo3.png" width="106" height="24"> 
   
 <!--- typing ---> 
  
@@ -69,4 +69,9 @@ ____
   
   
 ____
-  
+ 
+<h5 align="left">
+ 
+<!--- Download --->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=A0140C&width=435&lines=Download+the+repository)](https://git.io/typing-svg)  
+[Click here](https://github.com/karamanets/Tip/blob/main/README/Download.md) 
