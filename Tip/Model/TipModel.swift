@@ -14,7 +14,7 @@ struct TipModel {
     var amount         = ""
     var sumTip         = ""
     var secondScreen   = false
-    var isAnimated = false
+    var isAnimated     = false
     
     let data = [5, 10, 15, 20, 25]
     
