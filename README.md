@@ -10,13 +10,12 @@
 
 ____
   
-  
-<!--- GIF iPnone ---> 
-<p><img align="right" src="https://github.com/karamanets/Tip/blob/main/Examples/Tip-gif.gif" width="300" height="600" /></p>
-  
-  
 <!--- Tag header --->
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=9356A0&width=435&lines=Frameworks" alt="Typing SVG" /></a>
+  
+  
+  <!--- GIF iPnone ---> 
+<p><img align="right" src="https://github.com/karamanets/Tip/blob/main/README/Tip-gif.gif" width="300" height="600" /></p>
   
   
 <!--- Tag --->
@@ -37,8 +36,8 @@ ____
 >### Just add the amount and number of people, and the percentage you want to leave the waiter. 
   
 
-<!--- Gamepad ---> 
-![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Gamepad.png) 
+<!--- Icon ---> 
+<img src="https://github.com/karamanets/karamanets/blob/main/logo3.png" width="106" height="24"> 
 
   
 ![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Lightning1.png)  Completely in SwiftUI
@@ -52,8 +51,8 @@ ____
 ![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Lightning1.png)  Adapt to the dark and light mode
   
 
-<!--- Gamepad ---> 
-![picture1](https://github.com/karamanets/karamanets/blob/main/icon/Gamepad.png) 
+<!--- Icon ---> 
+<img src="https://github.com/karamanets/karamanets/blob/main/logo3.png" width="106" height="24"> 
   
 <!--- typing ---> 
  
@@ -64,9 +63,14 @@ ____
  <h4 align="center">  
   
   <!--- Screens --->
-<img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen2.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen3.png" width="150" height="300">   <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen4.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen5.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/Examples/Screen6.png" width="150" height="300">
+<img src="https://github.com/karamanets/Tip/blob/main/README/Screen1.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/README/Screen2.png" width="150" height="300">   <img src="https://github.com/karamanets/Tip/blob/main/README/Screen3.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/README/Screen5.png" width="150" height="300">  <img src="https://github.com/karamanets/Tip/blob/main/README/Screen6.png" width="150" height="300">
   
   
   
 ____
-  
+ 
+<h5 align="left">
+ 
+<!--- Download --->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=A0140C&width=435&lines=Download+the+repository)](https://git.io/typing-svg)  
+[Click here](https://github.com/karamanets/Tip/blob/main/README/Download.md) 
