@@ -38,7 +38,7 @@ ____
   
  <!--- Screens List --->  
 <img src="https://github.com/karamanets/Tip/blob/main/README/Screen1.png" width="150" height="300">  <img
-src="https://github.com/karamanets/Tip/blob/main/README/Screen2.png" width="150" height="300">   <img
+src="https://github.com/karamanets/Tip/blob/main/README/Screen4.png" width="150" height="300">   <img
 src="https://github.com/karamanets/Tip/blob/main/README/Screen3.png" width="150" height="300">  <img
 src="https://github.com/karamanets/Tip/blob/main/README/Screen5.png" width="150" height="300">  <img 
 src="https://github.com/karamanets/Tip/blob/main/README/Screen6.png" width="150" height="300">
