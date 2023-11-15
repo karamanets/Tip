@@ -12,9 +12,8 @@ struct TipView: View {
     @StateObject var vm = TipViewModel()
     
     var body: some View {
-        
-        ZStack {
-            NavigationStack {
+        NavigationStack {
+            VStack {
                 Form {
                     Section {
                         TextField("", text: $vm.model.amount)
@@ -56,24 +55,27 @@ struct TipView: View {
                     
                     GetCatPicture(percentage: $vm.model.percentage)
                         .shadow(color: Color("color1"), radius: 5,x: 2,y: 2)
-                        
-                }
-                Button {
-                    vm.model.secondScreen = true
-                } label: {
-                    ButtonModifier()
+                    
                 }
                 .sheet(isPresented: $vm.model.secondScreen) {
                     SecondView(percentage: $vm.model.percentage)
                 }
             }
-            .navigationTitle("Count you're bill")
-            .navigationBarTitleDisplayMode(.inline)
-            .overlay { LottieView(animation: $vm.model.isAnimated) }
+            .navigationTitle("Tips")
+            .toolbar {
+                Button {
+                    vm.model.secondScreen = true
+                } label: {
+                    ButtonModifier()
+                }
+            }
         }
+        
+        .overlay { LottieView(animation: $vm.model.isAnimated) }
         .onSubmit {
             vm.model.isAnimated.toggle()
         }
+        .ignoresSafeArea(.keyboard)
     }
 }
 //                  🔱

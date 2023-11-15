@@ -23,6 +23,7 @@ struct SecondScreenAnimationView: View {
                  into your life.
                  """)
                 .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
                 .font(.custom("abosanova", size: 22))
                 .padding()
                 .shadow(color: .purple, radius: 4, x: 3, y: 3)
@@ -100,6 +101,7 @@ struct SecondScreenAnimationView: View {
         }
     }
 }
+
 //                         🔱
 struct SecondScreenAnimationView_Previews: PreviewProvider {
     static var previews: some View {
